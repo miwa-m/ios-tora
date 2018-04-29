@@ -60,7 +60,7 @@ print("Before Struct: " + String(struct_var.value))
 print("Before Class: " + String(class_var.value))
 compare_s_c(test_struct: struct_var, test_class: class_var)
 // 構造体は値渡し:関数に渡した先で元の値は変わらない　クラスは変更が反映される
-print("After Struct:" + String(struct_var.value))
-print("After Struct:" + String(class_var.value))
+print("After Struct: " + String(struct_var.value))
+print("After Struct: " + String(class_var.value))
 // struct_var.value = 5
 // print(struct_var.plus_one())

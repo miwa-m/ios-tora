@@ -202,6 +202,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let celleditviewConttoller = segue.destination as! CelleditViewController
         // 遷移先オブジェクトのtodoListが書き換わっていない？
         let row = sender as! Int
+        // 一件だけでいいようにする
         if let todo: [MyTodo] = todoList{
             celleditviewConttoller.todoList = todo
         }

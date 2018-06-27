@@ -83,11 +83,19 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
         let history = SearchHistory()
         history.keyword = inputText
         history.search_date = Date()
+        
+        historyList.removeAll()
+        let userDefaults = UserDefaults.standard
+        if let storedhistoryList = userDefaults.object(forKey: "historyList") as? Data{
+            if let unarchiveHistoryList = NSKeyedUnarchiver.unarchiveObject(with: storedhistoryList) as? [SearchHistory]{
+                historyList.append(contentsOf: unarchiveHistoryList)
+            }
+        }
+        
         historyList.append(history)
+        
         // 検索履歴をシリアライズ
         let archiveData = NSKeyedArchiver.archivedData(withRootObject: historyList)
-        // userdefaultsに保存
-        let userDefaults = UserDefaults.standard
         userDefaults.set(archiveData, forKey: "historyList")
         userDefaults.synchronize()
         // キーボードを閉じる

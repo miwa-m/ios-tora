@@ -80,7 +80,6 @@ class SearchHistoryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as? HistoryTableViewCell else{
-            print("a") // debug
             return UITableViewCell()
         }
         let history = historyList[indexPath.row]

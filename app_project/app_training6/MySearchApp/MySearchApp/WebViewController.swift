@@ -55,6 +55,9 @@ class WebViewController: UIViewController {
             if self.parentView is SearchItemTableViewController{
                 (self.parentView as? SearchItemTableViewController)?.reloadData()
             }
+            if self.parentView is SearchCategoryItemTableViewController{
+                (self.parentView as? SearchCategoryItemTableViewController)?.reloadData()
+            }
             
         }
     }

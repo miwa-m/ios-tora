@@ -54,39 +54,12 @@ class TabBarController: UITabBarController {
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         transitioningReload(destIndex: item.tag)
-        /*
-        switch item.tag {
-        case 0:
-            // 検索画面
-            print("検索画面に遷移")
-            let navigationController = self.viewControllers![0] as? UINavigationController
-            let searchItemTableViewController = navigationController?.viewControllers[0] as? SearchItemTableViewController
-            searchItemTableViewController?.reloadData()
-        case 1:
-            // 検索履歴
-            // 検索画面のインスタンスも渡してしまうかメソッドを外にだす
-            let navigationController = self.viewControllers![1] as? UINavigationController
-            let historyTableViewController = navigationController?.viewControllers[0] as? SearchHistoryTableViewController
-            historyTableViewController?.reloadhistoryData()
-            print(navigationController?.viewControllers.count)
-            let searchItemCollectionViewController = navigationController?.viewControllers[1] as? SearchItemCollectionViewController
-            searchItemCollectionViewController?.reloadData()
-        case 2:
-            print("お気に入りに遷移")
-            let navigatiomController = self.viewControllers![2] as? UINavigationController
-            let favoriteTableViewController = navigatiomController?.viewControllers[0] as? FavoriteItemTableViewController
-            favoriteTableViewController?.reloadData()
-            
-        default:
-            print("何もなし")
-        }
-        */
     }
 
     func transitioningReload(destIndex: Int){
         let navigationController = self.viewControllers![destIndex] as? UINavigationController
         let topViewController = navigationController?.topViewController
-
+        print(destIndex)
         switch destIndex{
         case 0:
             // キーワード検索へ遷移
@@ -100,6 +73,11 @@ class TabBarController: UITabBarController {
         case 2:
             // お気に入り
             (navigationController?.viewControllers[0] as? FavoriteItemTableViewController)?.reloadData()
+        case 3:
+            // カテゴリ検索
+            if topViewController is SearchCategoryItemTableViewController{
+                (topViewController as? SearchCategoryItemTableViewController)?.reloadData()
+            }
         default: break
         }
         /*

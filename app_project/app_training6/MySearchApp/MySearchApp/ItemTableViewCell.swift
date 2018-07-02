@@ -15,10 +15,13 @@ class ItemTableViewCell: UITableViewCell {
     @IBOutlet weak var itemPriceLabel: UILabel! // 商品価格
     
     @IBOutlet weak var fitemTitleLabel: UILabel!
-    
     @IBOutlet weak var fitemImageView: UIImageView!
-    
     @IBOutlet weak var fitemPriceLabel: UILabel!
+    
+    @IBOutlet weak var citemTitleLabel: UILabel!
+    @IBOutlet weak var citemImageView: UIImageView!
+    @IBOutlet weak var citemPriceLabel: UILabel!
+    
     
     //var itemUrl: String? // 商品ページのURL。遷移先の画面で利用する
     var itemData: ItemData?
@@ -42,6 +45,8 @@ class ItemTableViewCell: UITableViewCell {
         if let fitemImageView = fitemImageView{
             fitemImageView.image = nil
         }
-        
+        if let citemImageView = citemImageView{
+            citemImageView.image = nil
+        }
     }
 }

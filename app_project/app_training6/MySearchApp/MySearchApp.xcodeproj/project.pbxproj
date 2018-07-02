@@ -14,6 +14,10 @@
 		8A23273D20D4DCA5007B77C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A23273C20D4DCA5007B77C2 /* Assets.xcassets */; };
 		8A23274020D4DCA5007B77C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A23273E20D4DCA5007B77C2 /* LaunchScreen.storyboard */; };
 		8A2B6E4020D80440008D8E57 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B6E3F20D80440008D8E57 /* WebViewController.swift */; };
+		8A31E1E720E8E2F200FE0BC5 /* ItemCategoryResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31E1E620E8E2F200FE0BC5 /* ItemCategoryResultSet.swift */; };
+		8A31E1E920E8E3F400FE0BC5 /* SearchCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31E1E820E8E3F400FE0BC5 /* SearchCategoryTableViewController.swift */; };
+		8A31E1EB20EA2AED00FE0BC5 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31E1EA20EA2AED00FE0BC5 /* CategoryTableViewCell.swift */; };
+		8A31E1ED20EA398400FE0BC5 /* SearchCategoryItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31E1EC20EA398400FE0BC5 /* SearchCategoryItemTableViewController.swift */; };
 		8A99BA9A20DE2D3E00D3D518 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99BA9920DE2D3E00D3D518 /* TabBarController.swift */; };
 		8A99BA9C20DEAEC900D3D518 /* SearchItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99BA9B20DEAEC900D3D518 /* SearchItemCollectionViewController.swift */; };
 		8A99BA9E20DEB14600D3D518 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99BA9D20DEB14600D3D518 /* ItemCollectionViewCell.swift */; };
@@ -35,6 +39,10 @@
 		8A23273F20D4DCA5007B77C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A23274120D4DCA5007B77C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A2B6E3F20D80440008D8E57 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		8A31E1E620E8E2F200FE0BC5 /* ItemCategoryResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategoryResultSet.swift; sourceTree = "<group>"; };
+		8A31E1E820E8E3F400FE0BC5 /* SearchCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryTableViewController.swift; sourceTree = "<group>"; };
+		8A31E1EA20EA2AED00FE0BC5 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		8A31E1EC20EA398400FE0BC5 /* SearchCategoryItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryItemTableViewController.swift; sourceTree = "<group>"; };
 		8A99BA9920DE2D3E00D3D518 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8A99BA9B20DEAEC900D3D518 /* SearchItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemCollectionViewController.swift; sourceTree = "<group>"; };
 		8A99BA9D20DEB14600D3D518 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -79,6 +87,8 @@
 				8A23273520D4DCA4007B77C2 /* AppDelegate.swift */,
 				8A23273720D4DCA4007B77C2 /* ViewController.swift */,
 				8A23273920D4DCA4007B77C2 /* Main.storyboard */,
+				8A31E1E820E8E3F400FE0BC5 /* SearchCategoryTableViewController.swift */,
+				8A31E1E620E8E2F200FE0BC5 /* ItemCategoryResultSet.swift */,
 				8A0668D620DF715300CC02F3 /* FavoriteItemTableViewController.swift */,
 				8A99BA9F20DF4F0D00D3D518 /* FavoriteUIBarButtonItem.swift */,
 				8A99BA9B20DEAEC900D3D518 /* SearchItemCollectionViewController.swift */,
@@ -87,7 +97,9 @@
 				8AF533B020DA9CB500F22A94 /* SearchHistoryTableViewController.swift */,
 				8A2B6E3F20D80440008D8E57 /* WebViewController.swift */,
 				8AFCF46E20D4F89800F8D2BE /* ItemTableViewCell.swift */,
+				8A31E1EC20EA398400FE0BC5 /* SearchCategoryItemTableViewController.swift */,
 				8A99BA9D20DEB14600D3D518 /* ItemCollectionViewCell.swift */,
+				8A31E1EA20EA2AED00FE0BC5 /* CategoryTableViewCell.swift */,
 				8AFCF47020D4FE9800F8D2BE /* SearchItemTableViewController.swift */,
 				8AFCF46C20D4E78500F8D2BE /* ItemSearchResultSet.swift */,
 				8A23273C20D4DCA5007B77C2 /* Assets.xcassets */,
@@ -172,10 +184,14 @@
 				8A99BA9E20DEB14600D3D518 /* ItemCollectionViewCell.swift in Sources */,
 				8A99BAA020DF4F0D00D3D518 /* FavoriteUIBarButtonItem.swift in Sources */,
 				8A99BA9C20DEAEC900D3D518 /* SearchItemCollectionViewController.swift in Sources */,
+				8A31E1E920E8E3F400FE0BC5 /* SearchCategoryTableViewController.swift in Sources */,
 				8AF533B120DA9CB500F22A94 /* SearchHistoryTableViewController.swift in Sources */,
 				8AF8EEAE20DE1058001F4B3E /* HistoryTableViewCell.swift in Sources */,
+				8A31E1EB20EA2AED00FE0BC5 /* CategoryTableViewCell.swift in Sources */,
 				8A99BA9A20DE2D3E00D3D518 /* TabBarController.swift in Sources */,
 				8A0668D720DF715300CC02F3 /* FavoriteItemTableViewController.swift in Sources */,
+				8A31E1E720E8E2F200FE0BC5 /* ItemCategoryResultSet.swift in Sources */,
+				8A31E1ED20EA398400FE0BC5 /* SearchCategoryItemTableViewController.swift in Sources */,
 				8A2B6E4020D80440008D8E57 /* WebViewController.swift in Sources */,
 				8AFCF46F20D4F89800F8D2BE /* ItemTableViewCell.swift in Sources */,
 				8AFCF46D20D4E78500F8D2BE /* ItemSearchResultSet.swift in Sources */,

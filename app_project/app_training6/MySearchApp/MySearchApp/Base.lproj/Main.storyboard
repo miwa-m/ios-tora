@@ -494,6 +494,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="カテゴリ検索結果" id="IzS-uA-MKR"/>
                     <connections>
+                        <outlet property="categoryNaviBar" destination="IzS-uA-MKR" id="PH1-r3-nwU"/>
                         <outlet property="citemTableView" destination="VpC-E9-UZP" id="Ovl-SL-Evi"/>
                     </connections>
                 </tableViewController>
